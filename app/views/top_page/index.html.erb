@@ -1,2 +1,28 @@
-<h1>TopPage#index</h1>
-<p>Find me in app/views/top_page/index.html.erb</p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-2 col-sm-2 col-xs-2"></div>
+    <div class="col-md-8 col-sm-8 col-xs-8 hello_user text-center">
+      <h1>Hello Admin!</h1>
+    </div>
+    <div class="col-md-2 col-sm-2 col-xs-2">
+      <i class="fa fa-user-circle-o user_icon fa-4x pull-left"></i>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+      <%= link_to '出勤',     {:controller => :top_page, :action => :attending}, :class => 'btn btn-info menu_button' %>
+    </div>
+    <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+      <%= link_to '退勤',     {:controller => :top_page, :action => :leaving}, :class => 'btn btn-info menu_button' %>
+    </div>
+    <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+      <%= link_to '出勤履歴', {:controller => :top_page, :action => :attending}, :class => 'btn btn-info menu_button' %>
+    </div>
+    <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+      <%= link_to '給料計算', {:controller => :top_page, :action => :attending}, :class => 'btn btn-info menu_button' %>
+    </div>
+    <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+      <%= link_to '時給設定', {:controller => :top_page, :action => :attending}, :class => 'btn btn-info menu_button' %>
+    </div>
+  </div>
+</div>

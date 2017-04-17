@@ -1,3 +1,11 @@
-// Place all the styles related to the TopPage controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+h1 {
+  text-align: center;
+  display: inline;
+}
+
+.menu_button {
+  margin: 40px;
+  width: 200px;
+  height: 50px;
+  font-size: 30px;
+}
