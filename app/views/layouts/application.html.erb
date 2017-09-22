@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Workrecord</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'application', media: 'all'%>
     <%= javascript_include_tag 'application'%>
@@ -16,6 +17,9 @@
 
   <body>
     <div class="header"></div>
+    <div class="col-md-12 col-sm-12 col-xs-12 user_icon">
+      <i class="fa fa-user-circle-o fa-4x pull-left"></i>
+    </div>
     <%= yield %>
   </body>
 </html>
